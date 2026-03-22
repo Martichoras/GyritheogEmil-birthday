@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diet Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🥗 Diet Planner</h1>
+
+  <div id="auth">
+    <h2>Login / Register</h2>
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="app" class="hidden">
+    <h2>Your Preferences</h2>
+
+    <label><input type="checkbox" id="vegan"> Vegan</label>
+    <label><input type="checkbox" id="glutenFree"> Gluten Free</label>
+
+    <br><br>
+    <button onclick="savePrefs()">Save Preferences</button>
+
+    <h3>🍽 Meals</h3>
+    <ul id="mealList"></ul>
+
+    <br>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
