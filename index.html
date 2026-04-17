@@ -273,12 +273,8 @@ function setStatus(id, html, cls) {
 
 const configured = FIREBASE_CONFIG.apiKey !== "DIN_API_KEY";
 
-if (!configured) {
-  document.getElementById('chat-config-banner').style.display    = 'block';
-  document.getElementById('hilsner-config-banner').style.display = 'block';
-  document.getElementById('chat-list').innerHTML    = '<div class="empty-state">Firebase ikke konfigureret endnu.</div>';
-  document.getElementById('hilsner-grid').innerHTML = '<div class="empty-state" style="grid-column:1/-1">Firebase ikke konfigureret endnu.</div>';
-} else {
+if (configured) {
+
   const app = initializeApp(FIREBASE_CONFIG);
   const db  = getDatabase(app);
 
