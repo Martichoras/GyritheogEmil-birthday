@@ -7,32 +7,32 @@
   },
   {
     "name": "Pastamaskine til penne",
-    "description": "",
-    "imageUrl": "",
-    "link": ""
+    "description": "En pastamaskine (extruder) der kan lave penne",
+    "imageUrl": "https://integration.imerco.dk/cdn-cgi/image/width=600,format=auto,quality=65/https://integration.imerco.dk/api/assetstorage/3990_3969e79c-5874-4876-a89e-34f6f131cd0b",
+    "link": "https://www.imerco.dk/witt-premium-pastamaskine-automatisk-inkl-tilbehoer-sort?id=100410365"
   },
    {
     "name": "Pænde hvide håndklæder",
-    "description": "",
-    "imageUrl": "",
+    "description": "I forskellige størrelser",
+    "imageUrl": "https://www.magasin.dk/dw/image/v2/BFCS_PRD/on/demandware.static/-/Sites-mdn-master-catalog/default/dwa357471b/large2/0B/5609965612737.jpg?sw=1280&sh=1536&sm=fit&sfrm=jpg",
     "link": ""
   },
    {
     "name": "Ribbe til indendørs træning",
-    "description": "",
-    "imageUrl": "",
-    "link": ""
+    "description": "En ribbe til træning",
+    "imageUrl": "https://www.traeningspartner.dk/media/a6/b7/55/1771578089/418519_Abilica_Premium_WallBar_Dips_Handle.jpg?ts=1771578089",
+    "link": "https://www.traeningspartner.dk/Premium-WallBar-Ribbevaeg-Komplet_420998"
   },
    {
     "name": "Tallerkner",
     "description": "Vi skal have udskiftet vores tallerkner, så vi ønsker os spisetallerkner, desserttallerkner og dybe tallerkner i mærket xxx",
-    "imageUrl": "",
+    "imageUrl": "https://integration.imerco.dk/cdn-cgi/image/width=750,format=auto,quality=65/https://integration.imerco.dk/api/assetstorage/3990_63ec6a2e-7f4c-493f-80e8-9899c3917166",
     "link": ""
   },
    {
     "name": "Glas",
-    "description": "En anden idé.",
-    "imageUrl": "",
+    "description": "Alm. drikkeglas, ca 35cl",
+    "imageUrl": "https://sw12669.sfstatic.io/upload_dir/shop/FH25/_thumbs/916257_high.w900.h900.backdrop.jpg",
     "link": ""
   },
    {
@@ -42,25 +42,32 @@
     "link": ""
   },
    {
-    "name": "Dunkraft",
-    "description": "En anden idé.",
-    "imageUrl": "",
+    "name": "Donkraft",
+    "description": "En donkraft til garagen, så vi har mulighed for at skifte dæk selv (selvom vi kommer til at betale os fra det alligevel).",
+    "imageUrl": "https://proffsmagasinet-res.cloudinary.com/images/f_auto/ProductImage29634003/STANLEY%20STMT81251-1%20Donkraft.jpg",
     "link": ""
   },
    {
     "name": "Værktøj til haven",
     "description": "Fx elektrisk hækkesaks, spade, ",
-    "imageUrl": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/81K5Itq7xRL._AC_SL1500_.jpg",
     "link": ""
   },
    {
     "name": "Planter til haven",
     "description": "Fx frugtbuske (hindbær, blåbær, mini fersken etc. eller blomster fx hortensia, astilbe, japansk kirsebær",
-    "imageUrl": "",
+    "imageUrl": "https://me-haveservice.dk/wp-content/uploads/2025/01/image00007-scaled.jpeg",
     "link": ""
   },
   {
     "name": "Bog om såkalender og køkkenhave",
+    "description": "Bøger, som oplister årets gang i køkkenhaven og giver inspiration til dyrkning",
+    "imageUrl": "https://koekkengalleriet.dk/cdn/shop/files/9788794564045Mink_kkenhave11730707558_7855_jpg.jpg?v=1740394435&width=800",
+    "link": "https://www.example.com"
+  },
+  
+    {
+    "name": "Ismaskine",
     "description": "Bøger, som oplister årets gang i køkkenhaven og giver inspiration til dyrkning",
     "imageUrl": "",
     "link": "https://www.example.com"
