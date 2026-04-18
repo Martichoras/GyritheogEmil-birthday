@@ -6,14 +6,62 @@
     "link": ""
   },
   {
-    "name": "Eksempel gave 2",
+    "name": "Pastamaskine til penne",
+    "description": "",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Pænde hvide håndklæder",
+    "description": "",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Ribbe til indendørs træning",
+    "description": "",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Tallerkner",
+    "description": "Vi skal have udskiftet vores tallerkner, så vi ønsker os spisetallerkner, desserttallerkner og dybe tallerkner i mærket xxx",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Glas",
     "description": "En anden idé.",
     "imageUrl": "",
     "link": ""
   },
+   {
+    "name": "Trykkoger",
+    "description": "En anden idé.",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Dunkraft",
+    "description": "En anden idé.",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Værktøj til haven",
+    "description": "Fx elektrisk hækkesaks, spade, ",
+    "imageUrl": "",
+    "link": ""
+  },
+   {
+    "name": "Planter til haven",
+    "description": "Fx frugtbuske (hindbær, blåbær, mini fersken etc. eller blomster fx hortensia, astilbe, japansk kirsebær",
+    "imageUrl": "",
+    "link": ""
+  },
   {
-    "name": "Eksempel gave 3",
-    "description": "Endnu en inspiration.",
+    "name": "Bog om såkalender og køkkenhave",
+    "description": "Bøger, som oplister årets gang i køkkenhaven og giver inspiration til dyrkning",
     "imageUrl": "",
     "link": "https://www.example.com"
   }
