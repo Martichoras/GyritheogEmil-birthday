@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Bagestål",
+    "description": "Til at bage brød med!",
+    "imageUrl": "https://qookware.dk/cdn/shop/files/Bagestal_pae_grill.jpg?v=1747988164&width=2000",
+    "link": ""
+  },
+  {
+    "name": "Eksempel gave 2",
+    "description": "En anden idé.",
+    "imageUrl": "",
+    "link": ""
+  },
+  {
+    "name": "Eksempel gave 3",
+    "description": "Endnu en inspiration.",
+    "imageUrl": "",
+    "link": "https://www.example.com"
+  }
+]

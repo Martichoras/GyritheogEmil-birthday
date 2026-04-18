@@ -21,10 +21,9 @@
   <nav class="nav-inner">
     <button class="tab-btn active" data-tab="welcome">Velkommen</button>
     <button class="tab-btn"        data-tab="info">Dato &amp; Sted</button>
+    <button class="tab-btn"        data-tab="program">Program</button>
     <button class="tab-btn"        data-tab="rsvp">Tilmelding</button>
     <button class="tab-btn"        data-tab="gifts">Gaveidéer</button>
-    <button class="tab-btn"        data-tab="program">Program</button>
-    <button class="tab-btn"        data-tab="hilsner">Hilsner</button>
   </nav>
 </div>
 
@@ -59,13 +58,13 @@
       </div>
       <div class="info-card">
         <div class="label">Tidspunkt</div>
-        <div class="value">Kl. 18:00</div>
+        <div class="value">Kl. 17:00</div>
         <div class="detail">Velkomstdrink fra kl. 18:00</div>
       </div>
       <div class="info-card">
         <div class="label">Festlokale</div>
-        <div class="value">Rive Event</div>
-        <div class="detail">Ørnevej 33<br>2400 Kbh NV</div>
+        <div class="value">Ørnevej 33</div>
+        <div class="detail">2400 Kbh NV</div>
       </div>
       <div class="info-card">
         <div class="label">Kontakt</div>
@@ -73,34 +72,10 @@
         <div class="detail">Skriv hvis du har spørgsmål!</div>
       </div>
     </div>
-    <a class="map-link" href="https://maps.app.goo.gl/pgudZGukWtvmaBow5" target="_blank">↗Se på Google Maps</a>
+    <a class="map-link" href="https://maps.app.goo.gl/pgudZGukWtvmaBow5" target="_blank">↗ Se på Google Maps</a>
   </section>
 
-  <!-- 3. RSVP -->
-  <section id="tab-rsvp" class="panel">
-    <div class="section-title">Tilmelding</div>
-    <div class="ornament"><span>Vi glæder os til at høre fra dig!</span></div>
-    <p class="section-sub">Fortælle os om du kommer, ved at besvare denne Google Form :)</p>
-    <div class="form-wrapper">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScj2JdqaxI1hR3FtJORIXMX3Aa1zsm1cpuBpr4jAfdS0Bzu0Q/viewform?embedded=true"
-        frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
-    </div>
-  </section>
-
-  <!-- 4. GIFTS -->
-  <section id="tab-gifts" class="panel">
-    <div class="section-title">Gaveidéer</div>
-    <div class="ornament"><span>Til inspiration</span></div>
-    <div class="gifts-note">
-      🥂 Herunder finder du idéer, hvis du ønsker at give os en gave. Det er selvfølgelig helt frivilligt!
-      Det vigtigste er, at vi kan tilbringe aftenen med dig :)
-    </div>
-    <div class="gifts-grid" id="gifts-grid"></div>
-
-    <hr class="gold-rule" />
-  </section>
-
-  <!-- 5. PROGRAM -->
+  <!-- 3. PROGRAM -->
   <section id="tab-program" class="panel">
     <div class="section-title">Aftenens Program</div>
     <div class="ornament"><span>En fantastisk aften med OS!</span></div>
@@ -121,31 +96,28 @@
     </div>
   </section>
 
-  <!-- 6. HILSNER -->
-  <section id="tab-hilsner" class="panel">
-    <div class="section-title">Hilsner</div>
-    <div class="ornament"><span>Kærlighed &amp; lykønskninger</span></div>
-    <p class="section-sub">Skriv en hilsen til os! (please)</p>
-
-    <div id="hilsner-config-banner" class="config-banner" style="display:none">
-      <strong>⚙ Firebase ikke konfigureret endnu</strong>
-      Åbn <code>index.html</code> og udfyld din Firebase-konfiguration i &lt;script&gt;-tagget.
+  <!-- 4. RSVP -->
+  <section id="tab-rsvp" class="panel">
+    <div class="section-title">Tilmelding</div>
+    <div class="ornament"><span>Vi glæder os til at høre fra dig!</span></div>
+    <p class="section-sub">Fortæl os om du kommer, ved at besvare denne Google Form :)</p>
+    <div class="form-wrapper">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScj2JdqaxI1hR3FtJORIXMX3Aa1zsm1cpuBpr4jAfdS0Bzu0Q/viewform?embedded=true"
+        frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
     </div>
+  </section>
 
-    <div class="hilsner-grid" id="hilsner-grid">
-      <div class="empty-state" style="grid-column:1/-1">Forbinder…</div>
+  <!-- 5. GIFTS -->
+  <section id="tab-gifts" class="panel">
+    <div class="section-title">Gaveidéer</div>
+    <div class="ornament"><span>Til inspiration</span></div>
+    <div class="gifts-note">
+      🥂 Herunder finder du idéer, hvis du ønsker at give os en gave. Det er selvfølgelig helt frivilligt!
+      Det vigtigste er, at vi kan tilbringe aftenen med dig :)
     </div>
-
-    <hr class="gold-rule" />
-
-    <p style="font-family:'Cinzel',serif;font-size:1rem;color:var(--gold);font-weight:600;letter-spacing:.08em;margin-bottom:18px">Skriv en hilsen ✦</p>
-    <div class="shared-box">
-      <div class="input-area" style="border-top:none">
-        <input class="f-name" id="hilsen-name" type="text" placeholder="Dit navn" style="width:100%;max-width:280px" />
-        <textarea class="f-msg" id="hilsen-msg" placeholder="Skriv din hilsen til Emil og Gyrithe her…"></textarea>
-        <button class="send-btn" id="hilsen-send">Send hilsen ✦</button>
-      </div>
-      <div class="status-msg" id="hilsen-status"></div>
+    <div class="gifts-grid" id="gifts-grid">
+      <!-- Loaded from gifts.json -->
+      <div class="empty-state" style="grid-column:1/-1">Indlæser gaveidéer…</div>
     </div>
   </section>
 
@@ -156,23 +128,14 @@
 </footer>
 
 
-<!-- ═══════════════════════════════════════
-     TAB NAVIGATION  (plain script, no module)
-     ═══════════════════════════════════════ -->
 <script>
 /* ════════════════════════════════════════════
-   REDIGER GAVER OG PROGRAM HER
+   PROGRAM — rediger her
    ════════════════════════════════════════════ */
-var GIFTS = [
-  { name: "Bagestål", description: "til at bage brød med!", 			   emoji: "", imageUrl: "https://qookware.dk/cdn/shop/files/Bagestal_pae_grill.jpg?v=1747988164&width=2000", link: "" },
-  { name: "Eksempel gave 2", description: "En anden idé.",                 emoji: "🥂", imageUrl: "", link: "" },
-  { name: "Eksempel gave 3", description: "Endnu en inspiration.",         emoji: "🌟", imageUrl: "", link: "" },
-];
-
 var PROGRAM = [
   // Fjern // og udfyld når klar:
-  // { time: "18:00", title: "Velkomst & drinks",  desc: "Velkomstdrink og hygge." },
-  // { time: "19:00", title: "Middagsservering",   desc: "Festmiddag med taler." },
+  // { time: "17:00", title: "Velkomst & drinks",  desc: "Velkomstdrink og hygge." },
+  // { time: "18:00", title: "Middagsservering",   desc: "Festmiddag med taler." },
   // { time: "21:30", title: "Lancier dans",        desc: "Alle på gulvet!" },
 ];
 
@@ -181,32 +144,6 @@ function esc(s) {
   return String(s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;')
     .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function ts() {
-  return new Date().toLocaleString('da-DK',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-}
-function setStatus(id, html, cls) {
-  var el = document.getElementById(id);
-  if (!el) return;
-  el.innerHTML = html || '';
-  el.className = 'status-msg' + (cls ? ' '+cls : '');
-}
-
-/* ── RENDER GIFTS ── */
-var giftsGrid = document.getElementById('gifts-grid');
-if (GIFTS.length === 0) {
-  giftsGrid.innerHTML = '<p style="color:var(--muted);font-style:italic;text-align:center">Gaveliste opdateres snart.</p>';
-} else {
-  GIFTS.forEach(function(g) {
-    var imgHtml = g.imageUrl
-      ? '<div class="gift-img"><img src="'+esc(g.imageUrl)+'" alt="'+esc(g.name)+'" /></div>'
-      : '<div class="gift-img">'+g.emoji+'</div>';
-    var linkHtml = g.link ? '<a class="gift-link" href="'+esc(g.link)+'" target="_blank">↗ Se her</a>' : '';
-    var card = document.createElement('div');
-    card.className = 'gift-card';
-    card.innerHTML = imgHtml+'<div class="gift-body"><h3>'+esc(g.name)+'</h3><p>'+esc(g.description)+'</p>'+linkHtml+'</div>';
-    giftsGrid.appendChild(card);
-  });
 }
 
 /* ── RENDER PROGRAM ── */
@@ -222,6 +159,34 @@ if (PROGRAM.length === 0) {
   });
 }
 
+/* ── LOAD GIFTS FROM gifts.json ── */
+function renderGifts(gifts) {
+  var giftsGrid = document.getElementById('gifts-grid');
+  if (!gifts || gifts.length === 0) {
+    giftsGrid.innerHTML = '<p style="color:var(--muted);font-style:italic;text-align:center;grid-column:1/-1">Gaveliste opdateres snart.</p>';
+    return;
+  }
+  giftsGrid.innerHTML = '';
+  gifts.forEach(function(g) {
+    var imgHtml = g.imageUrl
+      ? '<div class="gift-img"><img src="'+esc(g.imageUrl)+'" alt="'+esc(g.name)+'" /></div>'
+      : '<div class="gift-img" style="font-size:3.2rem">🎁</div>';
+    var linkHtml = g.link ? '<a class="gift-link" href="'+esc(g.link)+'" target="_blank">↗ Se her</a>' : '';
+    var card = document.createElement('div');
+    card.className = 'gift-card';
+    card.innerHTML = imgHtml+'<div class="gift-body"><h3>'+esc(g.name)+'</h3><p>'+esc(g.description)+'</p>'+linkHtml+'</div>';
+    giftsGrid.appendChild(card);
+  });
+}
+
+fetch('gifts.json')
+  .then(function(r) { return r.json(); })
+  .then(function(data) { renderGifts(data); })
+  .catch(function() {
+    document.getElementById('gifts-grid').innerHTML =
+      '<p style="color:var(--muted);font-style:italic;text-align:center;grid-column:1/-1">Kunne ikke indlæse gaveliste.</p>';
+  });
+
 /* ── TAB NAVIGATION ── */
 document.querySelectorAll('.tab-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
@@ -232,131 +197,6 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
     window.scrollTo({top:0,behavior:'smooth'});
   });
 });
-</script>
-
-
-<!-- ═══════════════════════════════════════
-     FIREBASE  (ES module — fill in your config)
-     ═══════════════════════════════════════ -->
-<script type="module">
-import { initializeApp }                       from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
-import { getDatabase, ref, push, onValue,
-         query, orderByChild, limitToLast }    from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js';
-
-/* ════════════════════════════════════════════
-   👇 INDSÆT DIN FIREBASE-KONFIGURATION HER
-   ════════════════════════════════════════════ */
-const FIREBASE_CONFIG = {
-  apiKey: "AIzaSyDWAoacofKwFLfZNxd7bEnRE_F7awHzQ9c",
-  authDomain: "vifylder40.firebaseapp.com",
-  databaseURL: "https://vifylder40-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "vifylder40",
-  storageBucket: "vifylder40.firebasestorage.app",
-  messagingSenderId: "1014417891346",
-  appId: "1:1014417891346:web:55e1c6743bc1b70203f8cb"
-};
-/* ═══════════════════════════════════════════ */
-
-function esc(s) {
-  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function ts() {
-  return new Date().toLocaleString('da-DK',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-}
-function setStatus(id, html, cls) {
-  var el = document.getElementById(id);
-  if (!el) return;
-  el.innerHTML = html || '';
-  el.className = 'status-msg' + (cls ? ' '+cls : '');
-}
-
-const configured = FIREBASE_CONFIG.apiKey !== "DIN_API_KEY";
-
-if (configured) {
-
-  const app = initializeApp(FIREBASE_CONFIG);
-  const db  = getDatabase(app);
-
-  /* ── CHAT ── */
-  const chatRef = ref(db, 'chat');
-
-  onValue(query(chatRef, orderByChild('ts'), limitToLast(60)), snap => {
-    const list = document.getElementById('chat-list');
-    const msgs = [];
-    snap.forEach(child => msgs.push(child.val()));
-    if (!msgs.length) {
-      list.innerHTML = '<div class="empty-state">Ingen beskeder endnu — vær den første! 🎁</div>';
-      return;
-    }
-    list.innerHTML = '';
-    msgs.forEach(m => {
-      const div = document.createElement('div');
-      div.className = 'entry-item';
-      div.innerHTML = '<span class="entry-meta">'+esc(m.name)+' · '+esc(m.time)+'</span><div class="entry-bubble">'+esc(m.text)+'</div>';
-      list.appendChild(div);
-    });
-    list.scrollTop = list.scrollHeight;
-  });
-
-  async function sendChat() {
-    const name = document.getElementById('chat-name').value.trim();
-    const text = document.getElementById('chat-text').value.trim();
-    if (!name || !text) { setStatus('chat-status','<span>Udfyld dit navn og besked</span>','s-err'); return; }
-    const btn = document.getElementById('chat-send');
-    btn.disabled = true;
-    setStatus('chat-status','<div class="spinner"></div> Sender…');
-    try {
-      await push(chatRef, { name, text, time: ts(), ts: Date.now() });
-      document.getElementById('chat-text').value = '';
-      setStatus('chat-status','<span>Sendt! ✦</span>','s-ok');
-      setTimeout(() => setStatus('chat-status',''), 2500);
-    } catch(e) {
-      setStatus('chat-status','<span>Fejl — prøv igen</span>','s-err');
-    }
-    btn.disabled = false;
-  }
-  document.getElementById('chat-send').addEventListener('click', sendChat);
-  document.getElementById('chat-text').addEventListener('keydown', e => { if(e.key==='Enter') sendChat(); });
-
-  /* ── HILSNER ── */
-  const hilsnerRef = ref(db, 'hilsner');
-
-  onValue(query(hilsnerRef, orderByChild('ts')), snap => {
-    const grid = document.getElementById('hilsner-grid');
-    const items = [];
-    snap.forEach(child => items.push(child.val()));
-    if (!items.length) {
-      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1">Ingen hilsner endnu — skriv den første! ✦</div>';
-      return;
-    }
-    grid.innerHTML = '';
-    items.reverse().forEach(h => {
-      const card = document.createElement('div');
-      card.className = 'hilsen-card';
-      card.innerHTML = '<p>'+esc(h.text)+'</p><div class="hilsen-from">— '+esc(h.name)+'<span class="hilsen-time">'+esc(h.time)+'</span></div>';
-      grid.appendChild(card);
-    });
-  });
-
-  async function sendHilsen() {
-    const name = document.getElementById('hilsen-name').value.trim();
-    const text = document.getElementById('hilsen-msg').value.trim();
-    if (!name || !text) { setStatus('hilsen-status','<span>Udfyld dit navn og hilsen</span>','s-err'); return; }
-    const btn = document.getElementById('hilsen-send');
-    btn.disabled = true;
-    setStatus('hilsen-status','<div class="spinner"></div> Sender hilsen…');
-    try {
-      await push(hilsnerRef, { name, text, time: ts(), ts: Date.now() });
-      document.getElementById('hilsen-msg').value = '';
-      setStatus('hilsen-status','<span>Hilsen sendt — tak! ✦</span>','s-ok');
-      setTimeout(() => setStatus('hilsen-status',''), 3000);
-    } catch(e) {
-      setStatus('hilsen-status','<span>Fejl — prøv igen</span>','s-err');
-    }
-    btn.disabled = false;
-  }
-  document.getElementById('hilsen-send').addEventListener('click', sendHilsen);
-}
 </script>
 
 </body>
