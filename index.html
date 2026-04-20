@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emil & Gyrithe fylder 40 🥂</title>
+  <!-- Favicon: champagne emoji as SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥂</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -17,7 +19,7 @@
 </header>
 
 <!-- NAV TABS -->
-<div class="nav-wrap">
+<div class="nav-wrap" id="nav-wrap">
   <nav class="nav-inner">
     <button class="tab-btn active" data-tab="welcome">Velkommen</button>
     <button class="tab-btn"        data-tab="info">Dato &amp; Sted</button>
@@ -34,17 +36,13 @@
     <div class="section-title">VI HÅBER AT SE DIG TIL</div>
     <div class="ornament"><span>Dobbelt 40 års fødselsdag</span></div>
     <div class="welcome-body">
-	<p>Vi fylder <em>40 år</em>, og det skal fejres! 
-	  Så find det fine tøj frem (eller hvad end du føler dig bedst tilpas i), og kom og dans <em>lancier </em>
-	  så vi kan fejre denne milepæl, som om vi gik i gymnasiet igen.
-	  
-	  Her på siden kan du finde information om festen.
-	  
-		<div class="ornament"><span>Vi glæder os til at se jer til en <em>festlig</em> aften med mad, drikke, dans og højt humør!</span></div>
-		<p class="section-sub">Fortæl os om du kommer senest 1. juni, Gyrithe (via Facebook, telefon eller mail)</p>
-	  
-	  <em>Kærlig hilsen Gyrithe og Emil</em>
-	  
+      <p>Vi fylder <em>40 år</em>, og det skal fejres!
+      Så find det fine tøj frem (eller hvad end du føler dig bedst tilpas i), og kom og dans <em>Lancier</em>
+      så vi kan fejre denne milepæl, som om vi gik i gymnasiet igen.</p>
+      <p>Her på siden kan du finde information om festen.</p>
+      <div class="ornament"><span>Vi glæder os til at se jer til en <em>festlig</em> aften med mad, drikke, dans og højt humør!</span></div>
+      <p class="section-sub">Fortæl os om du kommer senest 1. juni, Gyrithe (via Facebook, telefon eller mail)</p>
+      <p><em>Kærlig hilsen Gyrithe og Emil</em></p>
       <p>Spørgsmål? Skriv endelig til os.</p>
     </div>
     <div style="text-align:center;margin-top:32px">
@@ -65,7 +63,7 @@
       <div class="info-card">
         <div class="label">Tidspunkt</div>
         <div class="value">Kl. 17:00</div>
-        <div class="detail">Forventet sluttidspunkt kl 03:00</div>
+        <div class="detail">Forventet sluttidspunkt kl. 03:00</div>
       </div>
       <div class="info-card">
         <div class="label">Sted</div>
@@ -92,7 +90,7 @@
         <h3>Lancier: dans-tutorial</h3>
       </div>
       <p style="color:var(--muted);font-size:.86rem;margin-bottom:16px;line-height:1.7">
-        Vi håber, at alle vil være med til at danse Lancier! Her er video-tutorial, så du kan øve jer inden festen :)
+        Vi håber, at alle vil være med til at danse Lancier! Her er video-tutorial, så du kan øve dig inden festen :)
       </p>
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/o98mhPIypEA" title="Les Lancier tutorial"
@@ -101,7 +99,7 @@
     </div>
   </section>
 
-  <!-- 5. GIFTS -->
+  <!-- 4. GIFTS -->
   <section id="tab-gifts" class="panel">
     <div class="section-title">Gaveidéer</div>
     <div class="ornament"><span>Til inspiration</span></div>
@@ -110,7 +108,6 @@
       Det vigtigste er, at vi kan tilbringe aftenen med dig :)
     </div>
     <div class="gifts-grid" id="gifts-grid">
-      <!-- Loaded from gifts.json -->
       <div class="empty-state" style="grid-column:1/-1">Indlæser gaveidéer…</div>
     </div>
   </section>
@@ -127,13 +124,12 @@
    PROGRAM — rediger her
    ════════════════════════════════════════════ */
 var PROGRAM = [
-  // Fjern // og udfyld når klar:
-   { time: "17:00", title: "Velkomst & drinks",  desc: "Velkomstdrink og hygge." },
-   { time: "18:00", title: "Middag",   desc: "" },
-   { time: "19:30", title: "Les Lancier dans",        desc: "" },
-   { time: "20:00", title: "Dessert",   desc: "." },  
-   { time: "21:00", title: "Les Lancier dans",        desc: "" },
-   { time: "21:30", title: "Fri leg og dans",        desc: "(og Gyrithe siger mere Lancier)" },
+  { time: "17:00", title: "Velkomst & drinks",  desc: "Velkomstdrink og hygge." },
+  { time: "18:00", title: "Middag",              desc: "" },
+  { time: "19:30", title: "Les Lancier dans",    desc: "" },
+  { time: "20:00", title: "Dessert",             desc: "" },
+  { time: "21:00", title: "Les Lancier dans",    desc: "" },
+  { time: "21:30", title: "Fri leg og dans",     desc: "(og Gyrithe siger mere Lancier)" },
 ];
 
 /* ── HELPERS ── */
@@ -191,7 +187,12 @@ document.querySelectorAll('.tab-btn').forEach(function(btn) {
     document.querySelectorAll('.panel').forEach(function(p) { p.classList.remove('active'); });
     btn.classList.add('active');
     document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-    window.scrollTo({top:0,behavior:'smooth'});
+
+    // Only scroll if nav is above the viewport — scroll just to the nav, not the top
+    var nav = document.getElementById('nav-wrap');
+    if (nav.getBoundingClientRect().top < 0) {
+      nav.scrollIntoView({behavior: 'smooth'});
+    }
   });
 });
 </script>
