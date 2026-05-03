@@ -24,18 +24,6 @@
     "link": "https://www.traeningspartner.dk/Premium-WallBar-Ribbevaeg-Komplet_420998"
   },
    {
-    "name": "Tallerkner",
-    "description": "Vi skal have udskiftet vores tallerkner, så vi ønsker os spisetallerkner, desserttallerkner og dybe tallerkner i mærket xxx",
-    "imageUrl": "https://integration.imerco.dk/cdn-cgi/image/width=750,format=auto,quality=65/https://integration.imerco.dk/api/assetstorage/3990_63ec6a2e-7f4c-493f-80e8-9899c3917166",
-    "link": ""
-  },
-   {
-    "name": "Glas",
-    "description": "Alm. drikkeglas, ca 35cl",
-    "imageUrl": "https://sw12669.sfstatic.io/upload_dir/shop/FH25/_thumbs/916257_high.w900.h900.backdrop.jpg",
-    "link": ""
-  },
-   {
     "name": "Trykkoger",
     "description": "En trykkoger!",
     "imageUrl": "https://owp.klarna.com/product/3104900976/WMF-Perfect-Plus-6.5L.jpg",
@@ -67,9 +55,9 @@
   },
   
     {
-    "name": "Ismaskine",
-    "description": "Bøger, som oplister årets gang i køkkenhaven og giver inspiration til dyrkning",
-    "imageUrl": "",
+    "name": "Ismaskine (med kompressor)",
+    "description": "Ismaskine til at lave gelato og hjemmelavet is. Indbygget kompressor",
+    "imageUrl": "https://bagetid.dk/vare/ismaskine-2l-med-kompressor/",
     "link": "https://www.example.com"
   }
 ]
